@@ -4,8 +4,9 @@
  */
 package Controller;
 
-import Bean.MsProduct;
-import Bean.MsUser;
+
+import Bean.Products;
+import Bean.Users;
 import controller.HibernateUtil;
 //import java.sql.*;
 import java.util.List;
@@ -43,16 +44,16 @@ public class Connect {
     }
     
 	public List getUserList(){
-        l = ses.createSQLQuery("SELECT * FROM users").addEntity(MsUser.class).list();
+        l = ses.createSQLQuery("SELECT * FROM users").addEntity(Users.class).list();
         return l;
     }
 	
 	public List getUserById(int id){
-        l = ses.createCriteria(MsUser.class).add(Restrictions.eq("userID", id)).list();
+        l = ses.createCriteria(Users.class).add(Restrictions.eq("userID", id)).list();
         return l;
     }
 	
-	public void insertUser(MsUser mu){
+	public void insertUser(Users mu){
         tran = ses.beginTransaction();
         tran.begin();
         ses.save(mu);
@@ -60,7 +61,7 @@ public class Connect {
         // tran.rollback();
     }
 	
-	public void insertProduct(MsProduct mp){
+	public void insertProduct(Products mp){
         tran = ses.beginTransaction();
         tran.begin();
         ses.save(mp);
@@ -68,7 +69,7 @@ public class Connect {
         // tran.rollback();
     }
 	
-	public void updateUser(MsUser mu){
+	public void updateUser(Users mu){
         tran = ses.beginTransaction();
         tran.begin();
         ses.update(mu);
@@ -77,7 +78,7 @@ public class Connect {
 	
 	public void deleteUser(int id){
         l = getUserById(id);
-        MsUser mu = (MsUser) l.get(0);
+        Users mu = (Users) l.get(0);
         tran = ses.beginTransaction();
         tran.begin();
         ses.delete(mu);

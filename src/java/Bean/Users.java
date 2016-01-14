@@ -20,8 +20,8 @@ public class Users {
     private String email;
     private String address;
 
-    public Users(int id, String username, String password, String status, String name, String email, String address) {
-        this.id = id;
+    public Users(String username, String password, String status, String name, String email, String address) {
+
         this.username = username;
         this.password = password;
         this.status = status;
