@@ -4,7 +4,8 @@
  */
 package Controller;
 
-import Bean.MsProduct;
+
+import Bean.Products;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletContext;
@@ -70,7 +71,7 @@ public class doInsertProduct extends HttpServlet {
 //			String query = "INSERT INTO MsProduct(productName, description, price, stock, image) VALUES('"+productName+"', '"+description+"', "+Integer.parseInt(price)+", "+Integer.parseInt(stock)+", '"+image+"')";
 //			con.execute(query);
 			
-			MsProduct mp = new MsProduct(productName, description, Integer.parseInt(price), Integer.parseInt(stock), image);
+		Products mp = new Products(productName, description, Integer.parseInt(price), Integer.parseInt(stock), image);
 			con.insertProduct(mp);
 			
 			response.sendRedirect("register.jsp?status=Insert product successful!");

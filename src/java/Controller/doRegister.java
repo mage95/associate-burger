@@ -4,7 +4,8 @@
  */
 package Controller;
 
-import Bean.MsUser;
+
+import Bean.Users;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -128,7 +129,7 @@ public class doRegister extends HttpServlet {
 //			String query = "INSERT INTO MsUser(Username, Password, Email, Address) VALUES('"+username+"', '"+password+"', '"+email+"', '"+address+"')";
 //			con.execute(query);
 			
-			MsUser mu = new MsUser(username, password, email, address);
+			Users mu = new Users(username, password, "member", "Users", email, address);
 			con.insertUser(mu);
 			
 			response.sendRedirect("register.jsp?status=Registration successful!");

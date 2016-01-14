@@ -18,8 +18,8 @@ public class Products {
     private int stock;
     private String image;
 
-    public Products(int id, String name, String description, int price, int stock, String image) {
-        this.id = id;
+    public Products(String name, String description, int price, int stock, String image) {
+        
         this.name = name;
         this.description = description;
         this.price = price;
