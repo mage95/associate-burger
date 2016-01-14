@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>doRegister</servlet-name>
+        <servlet-class>Controller.doRegister</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>doLogin</servlet-name>
+        <servlet-class>Controller.doLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>doSearch</servlet-name>
+        <servlet-class>Controller.doSearch</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>doInsertProduct</servlet-name>
+        <servlet-class>Controller.doInsertProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>doLogout</servlet-name>
+        <servlet-class>Controller.doLogout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doRegister</servlet-name>
+        <url-pattern>/doRegister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>doLogin</servlet-name>
+        <url-pattern>/doLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>doSearch</servlet-name>
+        <url-pattern>/doSearch</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>doInsertProduct</servlet-name>
+        <url-pattern>/doInsertProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>doLogout</servlet-name>
+        <url-pattern>/doLogout</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,21 @@
+Referensi File yang Digunakan
+=============================
+Alfredo Romero Morgen Wiria - 1701351162 - BA01
+Associate Burger
+
+* burger_unknown.png
+    http://sweetclipart.com/multisite/sweetclipart/files/imagecache/middle/hamburger_lineart.png
+* Cheeseburger.png
+    http://www.mcdonalds.ca/content/dam/Canada/en/Promo/blt/img/burger.png
+* Double_Cheeseburger.jpg
+    http://www.bellassportsri.com/images/burger.jpg
+* header_associate_burger.jpg
+    Buat sendiri dengan menggunakan gambar "mcdonald-mexican-burger.jpg"
+* header_associate_burger_large.jpg
+    Buat sendiri dengan menggunakan gambar "mcdonald-mexican-burger.jpg"
+* MacBurger.gif
+    http://hospicecapebreton.org/wp-content/uploads/2015/09/iOH3jpS.gif
+* mcdonald-mexican-burger.jpg
+    http://joburgwest.getitonline.co.za/wp-content/uploads/sites/13/2013/06/Mexican-Burger.jpg
+* square_checkered_orange.jpg
+    https://img0.etsystatic.com/051/0/8002487/il_340x270.668367660_me24.jpg
